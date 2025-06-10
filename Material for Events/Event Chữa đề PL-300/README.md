@@ -8,7 +8,7 @@ Do một số file vượt quá giới hạn dung lượng của GitHub (trên 2
 ---
 
 ## 📌 Lưu ý:
-- Tài liệu chỉ dùng cho mục đích học tập, **không chia sẻ công khai lại dưới tên khác**
+- Tài liệu chỉ dùng cho mục đích học tập, **không chia sẻ công khai lại dưới tên khác**.
 
 ---
 
