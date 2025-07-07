@@ -3,4 +3,4 @@ Repo này lưu trữ các file thực hành theo từng video Datapot đăng t�
 <hr>
 Theo dõi Datapot để nhận thêm những thông tin hữu ích nhé!</br>
 Website: https://datapot.vn/</br>
-Youtube: https://www.youtube.com/@Datapotvn
+YouTube: https://www.youtube.com/@Datapotvn
