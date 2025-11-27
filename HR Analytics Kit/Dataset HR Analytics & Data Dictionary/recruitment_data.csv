@@ -1,0 +1,402 @@
+﻿Candidate_ID,Full_Name,Department,Recruitment_Source,Recruitment_Cost,Application_Date,Stage_1_Screening,Stage_2_Interview,Stage_3_Assessment,Stage_4_Offer,Final_Status,Hire_Date,EmployeeID
+CAN003,David Johnson,Human Resources,LinkedIn,3793.97,8/23/2023,Passed,Passed,Failed,N/A,Rejected,, 
+CAN007,David Jones,Human Resources,Direct Application,761.38,10/25/2024,Passed,Passed,Passed,Failed,Rejected,, 
+CAN010,David Brown,Human Resources,University Campus,3686.33,12/5/2023,Passed,Passed,Failed,N/A,Rejected,, 
+CAN014,David Garcia,Human Resources,Referral,1455.53,1/15/2023,Passed,Passed,Passed,Accepted,Hired,2/18/2023,101
+CAN018,Emily Rodriguez,Human Resources,LinkedIn,2861.4,7/18/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN022,Robert Johnson,Human Resources,Referral,1127.72,6/4/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN025,Sarah Smith,Human Resources,University Campus,2552.31,1/5/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN029,Jane Jones,Human Resources,Referral,3165.87,5/21/2023,Passed,Passed,Passed,Accepted,Hired,7/28/2023,140
+CAN032,Mike Williams,Human Resources,Job Board,1267.36,3/21/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN037,David Smith,Human Resources,Direct Application,1870.76,9/5/2024,Passed,Passed,Passed,Accepted,Hired,12/3/2024,311
+CAN041,Sarah Johnson,Human Resources,LinkedIn,1049.17,11/14/2024,Passed,Passed,Passed,Accepted,Hired,2/1/2025,351
+CAN046,Mike Miller,Human Resources,Direct Application,3481.35,4/12/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN051,Mike Rodriguez,Human Resources,Job Board,4863.13,5/23/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN054,Lisa Davis,Human Resources,Job Board,4526.72,10/4/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN059,Chris Jones,Human Resources,Referral,703.52,5/11/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN064,Mike Johnson,Human Resources,Referral,2105.39,10/29/2023,Passed,Passed,Passed,Accepted,Hired,11/29/2023,494
+CAN069,David Garcia,Human Resources,University Campus,835.48,10/1/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN073,Emily Miller,Human Resources,Job Board,524.85,4/25/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN078,Emily Smith,Human Resources,Job Board,833.2,3/9/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN083,Sarah Brown,Human Resources,Referral,1989.04,4/13/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN087,Chris Williams,Human Resources,Direct Application,3783.23,8/23/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN091,Lisa Jones,Human Resources,LinkedIn,1038.17,5/10/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN096,Jane Martinez,Human Resources,Referral,2722.08,9/25/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN099,David Garcia,Human Resources,University Campus,614.39,7/6/2025,Passed,Passed,Passed,Accepted,Hired,9/24/2025,634
+CAN104,David Brown,Human Resources,Referral,2788.57,9/18/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN107,Chris Smith,Human Resources,Direct Application,2346.72,8/21/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN112,Mike Miller,Human Resources,Direct Application,1225.5,4/7/2024,Passed,Passed,Passed,Accepted,Hired,6/25/2024,760
+CAN117,Emily Davis,Human Resources,Job Board,4116.52,3/8/2023,Passed,Passed,Passed,Accepted,Hired,4/21/2023,790
+CAN121,Chris Davis,Human Resources,University Campus,4133.48,9/12/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN125,Anna Smith,Human Resources,University Campus,1525.71,6/24/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN130,John Miller,Human Resources,Direct Application,2798.36,1/3/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN135,Mike Miller,Human Resources,LinkedIn,4743.09,11/12/2023,Passed,Passed,Passed,Accepted,Hired,1/12/2024,879
+CAN140,Chris Davis,Human Resources,Referral,4873.02,7/3/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN145,David Martinez,Human Resources,Referral,1781.78,4/19/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN151,John Williams,Human Resources,Referral,4587.2,5/15/2024,Passed,Passed,Passed,Accepted,Hired,7/17/2024,957
+CAN155,Chris Jones,Human Resources,LinkedIn,4935.43,6/23/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN160,Mike Davis,Human Resources,Referral,3776.97,1/25/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN165,Emily Miller,Human Resources,Referral,906.3,3/24/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN170,Jane Smith,Human Resources,University Campus,3159.02,8/26/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN175,David Williams,Human Resources,University Campus,3403.28,7/19/2024,Passed,Passed,Passed,Accepted,Hired,8/30/2024,1040
+CAN180,Robert Miller,Human Resources,Referral,1118.84,1/31/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN185,Jane Smith,Human Resources,University Campus,1660.74,5/23/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN190,Sarah Williams,Human Resources,University Campus,1588.34,5/1/2025,Passed,Passed,Passed,Accepted,Hired,7/16/2025,1108
+CAN195,Anna Johnson,Human Resources,LinkedIn,2025.63,3/11/2024,Passed,Passed,Passed,Accepted,Hired,4/19/2024,1155
+CAN199,Jane Brown,Human Resources,Direct Application,4491.89,3/31/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN203,Anna Smith,Human Resources,Job Board,1227.33,6/26/2025,Passed,Passed,Passed,Accepted,Hired,9/6/2025,1201
+CAN208,Robert Johnson,Human Resources,Job Board,3485.76,9/3/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN213,Jane Williams,Human Resources,Direct Application,3433.83,7/31/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN218,Chris Garcia,Human Resources,Direct Application,3859.21,11/10/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN223,Lisa Miller,Human Resources,University Campus,921.54,3/26/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN228,John Miller,Human Resources,LinkedIn,2268.94,3/2/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN233,Mike Williams,Human Resources,Referral,3096.07,4/8/2024,Passed,Passed,Passed,Accepted,Hired,5/16/2024,1270
+CAN238,Mike Johnson,Human Resources,Referral,609.42,1/23/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN245,John Garcia,Human Resources,Job Board,569.55,7/22/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN250,Lisa Miller,Human Resources,Direct Application,4338.54,2/3/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN255,John Garcia,Human Resources,Direct Application,1262.72,11/11/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN260,Jane Garcia,Human Resources,Job Board,937.29,4/8/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN265,Lisa Miller,Human Resources,Job Board,4448.18,9/19/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN269,Jane Brown,Human Resources,Referral,2117.71,1/20/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN275,Emily Garcia,Human Resources,Referral,2801.04,6/1/2023,Passed,Passed,Passed,Accepted,Hired,7/29/2023,1348
+CAN282,John Miller,Human Resources,University Campus,2020.98,12/6/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN287,David Miller,Human Resources,Direct Application,2595.19,11/12/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN292,Jane Brown,Human Resources,University Campus,668.07,9/18/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN299,Emily Johnson,Human Resources,LinkedIn,3303.01,7/4/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN304,Jane Davis,Human Resources,Job Board,3368.43,8/14/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN309,Robert Davis,Human Resources,Job Board,4078.34,10/14/2024,Passed,Passed,Passed,Accepted,Hired,11/23/2024,1550
+CAN314,Anna Martinez,Human Resources,Direct Application,4831.92,2/17/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN319,Robert Martinez,Human Resources,Direct Application,1203.97,12/26/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN324,Jane Johnson,Human Resources,Job Board,1759.7,6/24/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN329,David Brown,Human Resources,University Campus,2388.2,9/4/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN336,Emily Johnson,Human Resources,LinkedIn,683.28,11/21/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN341,Anna Davis,Human Resources,Job Board,2712.27,1/6/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN346,Anna Miller,Human Resources,Direct Application,3271.33,1/10/2025,Passed,Passed,Passed,Accepted,Hired,2/13/2025,1781
+CAN353,Lisa Jones,Human Resources,LinkedIn,3464.12,8/24/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN360,Sarah Davis,Human Resources,Referral,3089.63,2/27/2024,Passed,Passed,Passed,Accepted,Hired,4/1/2024,1893
+CAN367,David Williams,Human Resources,University Campus,4825.36,11/2/2023,Passed,Passed,Passed,Accepted,Hired,12/21/2023,1911
+CAN372,David Garcia,Human Resources,Job Board,582,2/11/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN379,Jane Davis,Human Resources,Referral,4165.11,2/3/2023,Passed,Passed,Passed,Accepted,Hired,3/21/2023,1948
+CAN387,Emily Smith,Human Resources,Direct Application,1769.16,4/22/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN393,Sarah Rodriguez,Human Resources,LinkedIn,2174.08,1/20/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN002,Sarah Davis,Research & Development,University Campus,4778.21,2/20/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN005,Jane Johnson,Research & Development,Referral,1202.08,8/6/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN008,Jane Miller,Research & Development,Job Board,4397.79,5/5/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN012,Sarah Williams,Research & Development,Direct Application,4864.59,7/13/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN015,Jane Garcia,Research & Development,LinkedIn,1318.21,11/7/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN019,John Rodriguez,Research & Development,University Campus,2443.75,4/21/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN021,Mike Garcia,Research & Development,University Campus,3253.34,10/15/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN024,Mike Brown,Research & Development,University Campus,2148.63,9/12/2025,Passed,Passed,Passed,Accepted,Hired,10/25/2025,9
+CAN027,Mike Johnson,Research & Development,LinkedIn,1398.53,5/5/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN030,Lisa Garcia,Research & Development,LinkedIn,709.03,5/19/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN033,Chris Martinez,Research & Development,LinkedIn,792.73,1/20/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN035,Chris Brown,Research & Development,LinkedIn,4845.34,5/15/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN039,Chris Johnson,Research & Development,Referral,3579.05,12/3/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN042,Robert Johnson,Research & Development,University Campus,2728.3,5/25/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN044,Anna Jones,Research & Development,University Campus,4591.94,9/19/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN047,Mike Brown,Research & Development,University Campus,1902.7,2/20/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN049,Lisa Rodriguez,Research & Development,University Campus,2960.2,3/31/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN052,John Jones,Research & Development,Direct Application,3988.1,11/9/2024,Passed,Passed,Passed,Accepted,Hired,2/7/2025,20
+CAN055,Anna Jones,Research & Development,University Campus,3190.55,1/25/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN057,Sarah Miller,Research & Development,Job Board,898.22,10/4/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN060,Robert Davis,Research & Development,Job Board,1963.99,4/11/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN062,Emily Martinez,Research & Development,Referral,1721.07,8/27/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN066,Sarah Davis,Research & Development,University Campus,2942.13,10/9/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN068,Mike Brown,Research & Development,Direct Application,4109.89,8/9/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN071,Mike Johnson,Research & Development,LinkedIn,3975.1,7/10/2025,Passed,Passed,Passed,Accepted,Hired,8/25/2025,29
+CAN074,John Williams,Research & Development,LinkedIn,4169.58,10/11/2023,Passed,Passed,Passed,Accepted,Hired,11/19/2023,31
+CAN076,Sarah Rodriguez,Research & Development,Direct Application,3780.53,8/12/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN079,David Jones,Research & Development,Referral,2113.1,9/26/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN081,Sarah Brown,Research & Development,Referral,4383.97,2/25/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN084,John Garcia,Research & Development,LinkedIn,786.01,3/5/2023,Passed,Passed,Passed,Accepted,Hired,6/3/2023,36
+CAN086,Robert Martinez,Research & Development,Direct Application,1963.32,3/22/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN089,Mike Miller,Research & Development,LinkedIn,4492.46,9/9/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN092,Lisa Rodriguez,Research & Development,University Campus,3709.6,11/10/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN094,Sarah Davis,Research & Development,Job Board,3025.75,5/17/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN097,John Johnson,Research & Development,Job Board,2852.3,7/19/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN100,Jane Miller,Research & Development,Referral,985.51,4/8/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN102,David Williams,Research & Development,University Campus,3363.85,7/8/2024,Passed,Passed,Passed,Accepted,Hired,8/26/2024,48
+CAN105,Anna Jones,Research & Development,LinkedIn,4584.05,2/2/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN108,Emily Miller,Research & Development,Direct Application,3899.98,8/5/2024,Passed,Passed,Passed,Accepted,Hired,10/4/2024,51
+CAN110,Emily Miller,Research & Development,University Campus,846.41,10/4/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN113,David Rodriguez,Research & Development,University Campus,4683.64,8/31/2024,Passed,Passed,Passed,Accepted,Hired,11/24/2024,54
+CAN115,Mike Garcia,Research & Development,LinkedIn,3350.32,11/18/2023,Passed,Passed,Passed,Accepted,Hired,1/2/2024,56
+CAN118,Chris Johnson,Research & Development,LinkedIn,1339.57,4/23/2024,Passed,Passed,Passed,Accepted,Hired,7/21/2024,58
+CAN120,Robert Johnson,Research & Development,LinkedIn,2927.04,5/3/2023,Passed,Passed,Passed,Accepted,Hired,6/12/2023,59
+CAN123,Lisa Davis,Research & Development,University Campus,1931.02,10/22/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN126,Robert Davis,Research & Development,University Campus,2421.99,7/6/2023,Passed,Passed,Passed,Accepted,Hired,9/4/2023,61
+CAN128,Robert Williams,Research & Development,University Campus,4373.29,8/13/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN131,Sarah Smith,Research & Development,Direct Application,2378.35,1/10/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN133,Emily Martinez,Research & Development,LinkedIn,1039.39,5/5/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN136,Chris Jones,Research & Development,University Campus,1954.41,9/15/2025,Passed,Passed,Passed,Accepted,Hired,11/14/2025,66
+CAN138,Anna Jones,Research & Development,LinkedIn,3663.59,7/19/2024,Passed,Passed,Passed,Accepted,Hired,10/6/2024,67
+CAN141,John Williams,Research & Development,University Campus,4831.01,10/21/2024,Passed,Passed,Passed,Accepted,Hired,1/14/2025,68
+CAN143,John Martinez,Research & Development,University Campus,2737.62,11/8/2023,Passed,Passed,Passed,Accepted,Hired,1/8/2024,69
+CAN146,Lisa Martinez,Research & Development,Job Board,665.99,3/25/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN148,Anna Miller,Research & Development,Job Board,2762.06,4/10/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN150,Chris Smith,Research & Development,Job Board,1753.91,4/25/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN153,Anna Rodriguez,Research & Development,University Campus,1152.03,10/21/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN156,Anna Johnson,Research & Development,Job Board,1589.25,7/24/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN158,Anna Williams,Research & Development,Job Board,3927.29,2/14/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN161,Robert Miller,Research & Development,Job Board,2155.02,6/21/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN163,Sarah Brown,Research & Development,Referral,3350.88,1/19/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN166,Lisa Rodriguez,Research & Development,Job Board,4258.86,9/11/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN168,Mike Martinez,Research & Development,Direct Application,1339.33,11/2/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN171,Mike Jones,Research & Development,University Campus,3549.04,7/18/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN173,Anna Rodriguez,Research & Development,LinkedIn,2804.42,1/28/2025,Passed,Passed,Passed,Accepted,Hired,3/12/2025,85
+CAN176,Lisa Martinez,Research & Development,Referral,1284.65,2/13/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN178,David Garcia,Research & Development,Referral,2240.31,11/3/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN181,Mike Davis,Research & Development,LinkedIn,2034.8,12/23/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN183,Lisa Martinez,Research & Development,Job Board,4661.12,8/12/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN186,Emily Martinez,Research & Development,LinkedIn,3469.93,10/21/2024,Passed,Passed,Passed,Accepted,Hired,12/28/2024,94
+CAN188,Anna Jones,Research & Development,University Campus,2998.4,5/31/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN191,Lisa Williams,Research & Development,Job Board,918.96,6/6/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN193,Sarah Miller,Research & Development,Referral,4551.88,5/3/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN196,Emily Garcia,Research & Development,Job Board,2071.44,1/22/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN198,Jane Brown,Research & Development,Job Board,4537,11/26/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN201,Sarah Martinez,Research & Development,Referral,3389.14,1/27/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN204,Sarah Martinez,Research & Development,University Campus,4543.49,7/13/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN206,Anna Martinez,Research & Development,LinkedIn,541.39,3/27/2024,Passed,Passed,Passed,Accepted,Hired,5/21/2024,109
+CAN209,Emily Rodriguez,Research & Development,Referral,522.78,2/17/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN211,Sarah Smith,Research & Development,LinkedIn,2969.3,10/3/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN214,Lisa Rodriguez,Research & Development,Referral,1509.21,6/11/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN216,John Brown,Research & Development,Direct Application,1567.62,8/22/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN219,Robert Martinez,Research & Development,Direct Application,3423.35,7/8/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN221,Chris Johnson,Research & Development,Job Board,3459.26,6/1/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN224,Anna Garcia,Research & Development,Direct Application,2154.72,9/1/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN226,Jane Garcia,Research & Development,University Campus,1597.95,11/22/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN229,Chris Davis,Research & Development,Job Board,4514.21,6/16/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN231,David Rodriguez,Research & Development,Referral,4076.65,7/11/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN234,Robert Miller,Research & Development,LinkedIn,2716.33,3/19/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN236,Anna Brown,Research & Development,LinkedIn,3751.03,4/21/2025,Passed,Passed,Passed,Accepted,Hired,6/13/2025,127
+CAN239,Emily Johnson,Research & Development,Direct Application,3404.63,5/7/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN241,John Jones,Research & Development,Direct Application,4732.06,9/13/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN243,Lisa Garcia,Research & Development,Job Board,4616.89,2/24/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN246,Robert Brown,Research & Development,Job Board,4677.43,8/25/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN248,Mike Brown,Research & Development,LinkedIn,4849.95,8/13/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN251,Robert Johnson,Research & Development,LinkedIn,1825.02,12/23/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN253,David Jones,Research & Development,University Campus,4330.12,8/20/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN256,Jane Williams,Research & Development,Referral,3005.61,8/9/2025,Passed,Passed,Passed,Accepted,Hired,10/22/2025,143
+CAN258,Chris Garcia,Research & Development,Referral,3632.13,3/27/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN261,Chris Miller,Research & Development,University Campus,3267.53,3/30/2025,Passed,Passed,Passed,Accepted,Hired,6/15/2025,146
+CAN263,John Jones,Research & Development,LinkedIn,1130.38,5/19/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN266,Anna Rodriguez,Research & Development,University Campus,3833.46,12/20/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN268,Sarah Williams,Research & Development,LinkedIn,3661.18,10/20/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN271,John Williams,Research & Development,LinkedIn,4142.13,10/9/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN273,Robert Martinez,Research & Development,Direct Application,4401.83,8/30/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN276,Robert Martinez,Research & Development,Job Board,2756.82,12/12/2024,Passed,Passed,Passed,Accepted,Hired,2/25/2025,154
+CAN278,John Jones,Research & Development,LinkedIn,3424.84,2/16/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN280,David Brown,Research & Development,LinkedIn,4081.07,9/25/2024,Passed,Passed,Passed,Accepted,Hired,11/19/2024,157
+CAN283,David Davis,Research & Development,Referral,2190.12,6/5/2025,Passed,Passed,Passed,Accepted,Hired,8/6/2025,158
+CAN285,John Garcia,Research & Development,Direct Application,3102.26,8/4/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN288,Anna Davis,Research & Development,Direct Application,2941.9,3/26/2023,Passed,Passed,Passed,Accepted,Hired,6/16/2023,162
+CAN290,Anna Rodriguez,Research & Development,University Campus,3158.75,8/16/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN293,Mike Williams,Research & Development,Job Board,4201.7,10/15/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN295,Mike Martinez,Research & Development,Job Board,1071.77,7/9/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN297,Anna Rodriguez,Research & Development,Referral,3964.97,11/1/2024,Passed,Passed,Passed,Accepted,Hired,1/29/2025,166
+CAN300,David Martinez,Research & Development,Referral,884.06,12/23/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN302,David Smith,Research & Development,University Campus,2891.1,10/2/2023,Passed,Passed,Passed,Accepted,Hired,12/27/2023,170
+CAN305,Sarah Jones,Research & Development,Direct Application,3767.41,7/26/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN307,John Brown,Research & Development,Direct Application,2823.35,4/2/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN310,Sarah Davis,Research & Development,Direct Application,1718.75,11/19/2024,Passed,Passed,Passed,Accepted,Hired,1/20/2025,174
+CAN312,Jane Williams,Research & Development,LinkedIn,853.05,5/3/2025,Passed,Passed,Passed,Accepted,Hired,7/9/2025,176
+CAN315,Mike Smith,Research & Development,Referral,4261.91,2/8/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN317,David Davis,Research & Development,LinkedIn,2340.29,10/10/2023,Passed,Passed,Passed,Accepted,Hired,12/12/2023,178
+CAN320,Anna Martinez,Research & Development,Referral,1626.09,7/25/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN322,Emily Williams,Research & Development,Job Board,3715.68,9/7/2023,Passed,Passed,Passed,Accepted,Hired,11/12/2023,181
+CAN325,Emily Garcia,Research & Development,Direct Application,4796.89,7/9/2024,Passed,Passed,Passed,Accepted,Hired,10/6/2024,182
+CAN327,Jane Jones,Research & Development,Referral,2994.59,4/18/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN330,Chris Williams,Research & Development,LinkedIn,1614.79,7/3/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN332,Sarah Martinez,Research & Development,Job Board,3910.31,3/18/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN334,David Jones,Research & Development,Referral,1022.33,10/29/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN337,Anna Garcia,Research & Development,Direct Application,4349.57,4/10/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN339,Robert Martinez,Research & Development,Referral,2633.78,1/14/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN342,Jane Miller,Research & Development,Job Board,2630.62,11/24/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN344,Mike Brown,Research & Development,Referral,2452.33,7/20/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN347,Anna Miller,Research & Development,Direct Application,3357.92,2/19/2024,Passed,Passed,Passed,Accepted,Hired,4/25/2024,192
+CAN349,Mike Davis,Research & Development,LinkedIn,2185.76,7/1/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN351,Chris Smith,Research & Development,Job Board,2764.11,1/7/2023,Passed,Passed,Passed,Accepted,Hired,3/25/2023,194
+CAN354,Chris Rodriguez,Research & Development,Referral,1233.2,5/10/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN356,John Miller,Research & Development,Direct Application,3390.89,3/15/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN358,David Rodriguez,Research & Development,Referral,3135.99,5/21/2024,Passed,Passed,Passed,Accepted,Hired,7/19/2024,197
+CAN361,Lisa Davis,Research & Development,University Campus,2246.76,4/10/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN363,Robert Jones,Research & Development,Referral,2562.14,10/15/2024,Passed,Passed,Passed,Accepted,Hired,12/20/2024,199
+CAN365,Sarah Johnson,Research & Development,LinkedIn,4736.59,12/25/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN368,Sarah Brown,Research & Development,Referral,4574.08,4/6/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN370,David Jones,Research & Development,University Campus,812.13,5/12/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN373,Lisa Garcia,Research & Development,University Campus,924.99,3/3/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN375,Mike Davis,Research & Development,University Campus,820.35,5/5/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN377,Chris Williams,Research & Development,University Campus,4301.94,7/21/2023,Passed,Passed,Passed,Accepted,Hired,10/10/2023,205
+CAN381,John Garcia,Research & Development,Direct Application,1031.74,5/18/2024,Passed,Passed,Passed,Accepted,Hired,7/18/2024,207
+CAN383,Robert Williams,Research & Development,Referral,3330.24,9/27/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN385,Sarah Brown,Research & Development,LinkedIn,3807.82,11/6/2023,Passed,Passed,Passed,Accepted,Hired,12/6/2023,209
+CAN389,David Rodriguez,Research & Development,LinkedIn,3877.77,7/17/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN391,Sarah Miller,Research & Development,University Campus,4957.27,7/29/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN395,David Smith,Research & Development,Referral,2033.62,8/31/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN397,John Smith,Research & Development,Direct Application,4362.86,10/23/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN398,Emily Martinez,Research & Development,Referral,2430.47,12/22/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN399,Robert Jones,Research & Development,Referral,3878.92,5/1/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN400,Lisa Smith,Research & Development,University Campus,3895.44,10/9/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN401,Lisa Brown,Research & Development,Referral,964.06,7/22/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN001,Emily Miller,Sales,LinkedIn,2185.43,11/10/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN004,John Miller,Sales,University Campus,3193.96,11/20/2023,Passed,Passed,Passed,Accepted,Hired,1/18/2024,19
+CAN006,David Davis,Sales,Referral,1201.98,2/4/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN009,Mike Davis,Sales,LinkedIn,3205.02,9/22/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN011,David Davis,Sales,Referral,592.63,2/16/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN013,Mike Garcia,Sales,Job Board,4245.99,2/13/2023,Passed,Passed,Passed,Accepted,Hired,4/21/2023,34
+CAN016,David Garcia,Sales,University Campus,1325.32,3/14/2024,Passed,Passed,Passed,Accepted,Hired,5/17/2024,37
+CAN017,Robert Davis,Sales,University Campus,1869.09,5/12/2024,Passed,Passed,Passed,Accepted,Hired,7/31/2024,38
+CAN020,Jane Rodriguez,Sales,Job Board,1810.53,8/12/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN023,David Miller,Sales,Direct Application,1814.65,1/31/2023,Passed,Passed,Passed,Accepted,Hired,3/7/2023,44
+CAN026,Chris Martinez,Sales,University Campus,4033.29,9/23/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN028,Jane Smith,Sales,University Campus,2814.05,10/26/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN031,Anna Miller,Sales,Direct Application,3233.95,10/9/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN034,Anna Davis,Sales,LinkedIn,4769.98,3/12/2024,Passed,Passed,Passed,Accepted,Hired,5/13/2024,55
+CAN036,Chris Brown,Sales,Direct Application,4137.79,9/11/2024,Passed,Passed,Passed,Accepted,Hired,11/19/2024,57
+CAN038,Lisa Brown,Sales,LinkedIn,939.52,8/8/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN040,Chris Jones,Sales,Job Board,2480.69,4/15/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN043,Lisa Miller,Sales,Referral,654.75,3/15/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN045,Chris Williams,Sales,Job Board,1664.51,3/6/2024,Passed,Passed,Passed,Accepted,Hired,5/18/2024,83
+CAN048,John Rodriguez,Sales,Referral,2840.31,6/30/2024,Passed,Passed,Passed,Accepted,Hired,8/9/2024,87
+CAN050,Emily Williams,Sales,Referral,1331.85,4/1/2024,Passed,Passed,Passed,Accepted,Hired,5/2/2024,90
+CAN053,Jane Miller,Sales,Referral,4727.75,6/27/2024,Passed,Passed,Passed,Accepted,Hired,7/29/2024,92
+CAN056,Jane Rodriguez,Sales,Direct Application,4648.43,2/8/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN058,Chris Jones,Sales,University Campus,1381.92,10/30/2024,Passed,Passed,Passed,Accepted,Hired,12/24/2024,95
+CAN061,Chris Johnson,Sales,University Campus,2249.05,10/21/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN063,Lisa Johnson,Sales,Direct Application,4229.32,11/17/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN065,Jane Garcia,Sales,Direct Application,1764.21,5/30/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN067,Mike Brown,Sales,LinkedIn,1134.16,8/7/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN070,David Jones,Sales,Job Board,4940.99,6/25/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN072,Chris Williams,Sales,University Campus,1394.22,5/4/2024,Passed,Passed,Passed,Accepted,Hired,6/20/2024,118
+CAN075,Mike Rodriguez,Sales,Referral,3680.86,3/14/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN077,Jane Garcia,Sales,University Campus,3970.72,2/10/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN080,Chris Rodriguez,Sales,LinkedIn,1021.41,3/7/2025,Passed,Passed,Passed,Accepted,Hired,5/4/2025,125
+CAN082,Anna Davis,Sales,LinkedIn,3304.84,6/21/2023,Passed,Passed,Passed,Accepted,Hired,8/3/2023,128
+CAN085,Mike Garcia,Sales,Direct Application,1899.42,11/9/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN088,Chris Miller,Sales,Job Board,3369.01,2/7/2025,Passed,Passed,Passed,Accepted,Hired,4/3/2025,133
+CAN090,Anna Smith,Sales,Direct Application,2624.97,5/27/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN093,Robert Jones,Sales,Direct Application,3923.53,9/17/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN095,Chris Martinez,Sales,University Campus,3969.35,2/15/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN098,David Garcia,Sales,Referral,2423.93,4/12/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN101,Chris Davis,Sales,University Campus,641.43,12/5/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN103,Chris Garcia,Sales,Referral,1914.6,10/8/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN106,Mike Williams,Sales,Job Board,1621.82,1/29/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN109,Emily Martinez,Sales,Referral,1529.59,4/16/2023,Passed,Passed,Passed,Accepted,Hired,6/1/2023,159
+CAN111,Anna Smith,Sales,Referral,1803.88,9/14/2024,Passed,Passed,Passed,Accepted,Hired,10/19/2024,160
+CAN114,Anna Rodriguez,Sales,Direct Application,4136.54,5/4/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN116,Robert Jones,Sales,Referral,4421.57,1/6/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN119,Chris Davis,Sales,University Campus,4516.52,8/24/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN122,Chris Rodriguez,Sales,Direct Application,4532.41,10/8/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN124,Jane Miller,Sales,Direct Application,995.23,2/12/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN127,John Rodriguez,Sales,Job Board,4181.07,8/3/2023,Passed,Passed,Passed,Accepted,Hired,10/26/2023,183
+CAN129,David Smith,Sales,LinkedIn,531.28,10/6/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN132,Emily Smith,Sales,Job Board,1499.49,9/26/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN134,Chris Jones,Sales,Direct Application,2019.27,4/15/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN137,Mike Martinez,Sales,University Campus,2834.56,1/26/2024,Passed,Passed,Passed,Accepted,Hired,4/23/2024,216
+CAN139,Sarah Williams,Sales,LinkedIn,2136.33,8/2/2024,Passed,Passed,Passed,Accepted,Hired,10/17/2024,217
+CAN142,Mike Garcia,Sales,Referral,1633.02,4/21/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN144,Jane Brown,Sales,LinkedIn,1853.95,6/20/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN147,John Jones,Sales,Job Board,3243.04,9/26/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN149,Sarah Miller,Sales,University Campus,731.65,12/7/2023,Passed,Passed,Passed,Accepted,Hired,2/19/2024,227
+CAN152,Sarah Davis,Sales,Referral,1578.03,12/25/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN154,Emily Johnson,Sales,Job Board,2702.54,1/20/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN157,Mike Rodriguez,Sales,LinkedIn,3524.61,4/30/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN159,Chris Smith,Sales,Direct Application,1569.37,10/14/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN162,Anna Williams,Sales,LinkedIn,3345.38,8/27/2024,Passed,Passed,Passed,Accepted,Hired,10/16/2024,238
+CAN164,Robert Johnson,Sales,Job Board,2910.99,11/24/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN167,John Johnson,Sales,Job Board,1943.51,8/10/2023,Passed,Passed,Passed,Accepted,Hired,10/22/2023,242
+CAN169,Lisa Martinez,Sales,University Campus,683.49,8/27/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN172,David Rodriguez,Sales,University Campus,574.65,7/22/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN174,Emily Martinez,Sales,Job Board,1519.23,7/23/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN177,John Garcia,Sales,Direct Application,3609.22,2/25/2024,Passed,Passed,Passed,Accepted,Hired,3/30/2024,266
+CAN179,Anna Smith,Sales,Referral,4715.28,9/24/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN182,Jane Brown,Sales,Direct Application,1010.63,8/21/2023,Passed,Passed,Passed,Accepted,Hired,11/6/2023,278
+CAN184,David Garcia,Sales,Direct Application,4448.03,9/9/2024,Passed,Passed,Passed,Accepted,Hired,11/7/2024,282
+CAN187,Robert Miller,Sales,Job Board,4177.5,10/27/2024,Passed,Passed,Passed,Accepted,Hired,12/20/2024,283
+CAN189,Lisa Jones,Sales,University Campus,2883.43,7/13/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN192,Robert Martinez,Sales,LinkedIn,4537.47,6/24/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN194,Lisa Rodriguez,Sales,University Campus,3348.96,4/16/2023,Passed,Passed,Passed,Accepted,Hired,6/3/2023,296
+CAN197,Chris Davis,Sales,University Campus,3766.8,2/23/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN200,Robert Smith,Sales,Direct Application,4009.44,3/16/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN202,John Davis,Sales,LinkedIn,878.63,11/15/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN205,David Miller,Sales,University Campus,3228.93,8/16/2023,Passed,Passed,Passed,Accepted,Hired,10/3/2023,304
+CAN207,Anna Smith,Sales,Referral,956.62,9/9/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN210,David Jones,Sales,LinkedIn,1223.64,3/24/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN212,Anna Rodriguez,Sales,Job Board,3613.53,8/24/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN215,David Miller,Sales,Job Board,3704.81,11/26/2024,Passed,Passed,Passed,Accepted,Hired,1/9/2025,322
+CAN217,John Williams,Sales,Referral,1964.3,7/30/2023,Passed,Passed,Passed,Accepted,Hired,9/7/2023,328
+CAN220,John Brown,Sales,LinkedIn,4321.51,8/18/2025,Passed,Passed,Passed,Accepted,Hired,10/15/2025,329
+CAN222,Emily Martinez,Sales,LinkedIn,3057.39,1/25/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN225,Jane Martinez,Sales,Job Board,1693.41,6/22/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN227,John Johnson,Sales,University Campus,4878.55,11/23/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN230,John Johnson,Sales,Referral,3340.12,6/23/2023,Passed,Passed,Passed,Accepted,Hired,8/11/2023,340
+CAN232,David Williams,Sales,Job Board,2761.87,9/24/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN235,Anna Brown,Sales,Referral,1378.59,11/29/2023,Passed,Passed,Passed,Accepted,Hired,1/9/2024,348
+CAN237,Mike Martinez,Sales,University Campus,1763.48,4/24/2024,Passed,Passed,Passed,Accepted,Hired,6/27/2024,350
+CAN240,Mike Davis,Sales,Job Board,1297,4/17/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN242,Lisa Brown,Sales,University Campus,4792.68,10/29/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN244,Jane Rodriguez,Sales,Referral,2165.71,3/1/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN247,Emily Martinez,Sales,LinkedIn,2426.83,2/8/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN249,Chris Miller,Sales,Referral,4836.29,5/9/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN252,Anna Rodriguez,Sales,LinkedIn,2232.94,1/8/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN254,Sarah Williams,Sales,LinkedIn,1926.15,1/1/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN257,Emily Brown,Sales,LinkedIn,4712.7,7/26/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN259,Chris Jones,Sales,Direct Application,3065.28,8/27/2025,Passed,Passed,Passed,Accepted,Hired,10/12/2025,367
+CAN262,Emily Rodriguez,Sales,Referral,4955.24,10/13/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN264,Sarah Davis,Sales,Direct Application,2832.48,8/24/2024,Passed,Passed,Failed,N/A,Rejected,,
+CAN267,Jane Williams,Sales,Job Board,3636.57,4/28/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN270,Sarah Davis,Sales,Direct Application,1821.16,11/11/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN272,Sarah Williams,Sales,Referral,4145.51,8/21/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN274,Chris Martinez,Sales,Direct Application,4609.58,8/7/2024,Passed,Passed,Passed,Accepted,Hired,10/20/2024,381
+CAN277,Lisa Jones,Sales,Job Board,4092.33,11/19/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN279,Mike Martinez,Sales,Job Board,3658.85,1/25/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN281,Emily Jones,Sales,University Campus,4505.02,6/1/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN284,Jane Miller,Sales,Job Board,922.92,12/4/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN286,Chris Garcia,Sales,Referral,661.74,9/12/2024,Passed,Passed,Passed,Accepted,Hired,11/20/2024,398
+CAN289,Jane Miller,Sales,Direct Application,1789.44,6/26/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN291,Emily Garcia,Sales,Job Board,637.25,7/17/2025,Passed,Passed,Passed,Accepted,Hired,8/20/2025,403
+CAN294,Sarah Brown,Sales,Direct Application,2120.86,8/6/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN296,Robert Miller,Sales,Job Board,2850.09,2/25/2025,Passed,Passed,Passed,Accepted,Hired,5/21/2025,415
+CAN298,Anna Williams,Sales,Referral,1471.19,10/17/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN301,Jane Johnson,Sales,Direct Application,732.57,8/21/2025,Passed,Passed,Passed,Accepted,Hired,10/8/2025,418
+CAN303,Chris Williams,Sales,Job Board,2932.86,4/3/2023,Passed,Passed,Passed,Accepted,Hired,5/28/2023,424
+CAN306,Robert Miller,Sales,Job Board,4891.33,11/25/2024,Passed,Passed,Passed,Accepted,Hired,1/29/2025,425
+CAN308,Jane Smith,Sales,Job Board,1953.3,8/28/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN311,David Jones,Sales,Direct Application,2475.37,9/5/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN313,Chris Smith,Sales,Job Board,614.08,4/11/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN316,John Rodriguez,Sales,University Campus,3631.88,2/22/2024,Passed,Passed,Passed,Failed,Rejected,,
+CAN318,Mike Jones,Sales,University Campus,1279.82,2/10/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN321,Mike Johnson,Sales,Referral,2971.52,9/28/2025,Passed,Passed,Passed,Accepted,Hired,11/17/2025,446
+CAN323,David Rodriguez,Sales,Job Board,3470.89,10/27/2023,Passed,Passed,Failed,N/A,Rejected,,
+CAN326,David Johnson,Sales,LinkedIn,3820.54,5/5/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN328,Sarah Williams,Sales,LinkedIn,3252.74,10/9/2023,Passed,Passed,Passed,Accepted,Hired,11/8/2023,451
+CAN331,David Smith,Sales,University Campus,2101.88,12/27/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN333,Chris Davis,Sales,Job Board,564.77,8/5/2024,Passed,Passed,Passed,Accepted,Hired,10/3/2024,457
+CAN335,Chris Garcia,Sales,Job Board,707.01,11/29/2023,Passed,Passed,Passed,Accepted,Hired,2/13/2024,458
+CAN338,David Williams,Sales,University Campus,3666.46,7/15/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN340,Sarah Garcia,Sales,Job Board,940.25,11/6/2024,Passed,Passed,Passed,Accepted,Hired,12/25/2024,461
+CAN343,David Johnson,Sales,Job Board,1279.41,1/22/2025,Passed,Failed,N/A,N/A,Rejected,,
+CAN345,Sarah Jones,Sales,Direct Application,2293.27,3/23/2024,Passed,Failed,N/A,N/A,Rejected,,
+CAN348,David Brown,Sales,Job Board,703.87,6/23/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN350,Emily Brown,Sales,University Campus,3316.37,4/29/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN352,Mike Davis,Sales,LinkedIn,4354.2,5/17/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN355,Sarah Martinez,Sales,University Campus,817.56,6/14/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN357,Mike Smith,Sales,Job Board,619.3,8/6/2025,Passed,Passed,Passed,Accepted,Hired,10/18/2025,476
+CAN359,John Brown,Sales,Referral,4731.04,8/20/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN362,Jane Rodriguez,Sales,Referral,3394.8,3/20/2024,Failed,N/A,N/A,N/A,Rejected,,
+CAN364,Anna Williams,Sales,Job Board,2955.28,10/21/2023,Passed,Failed,N/A,N/A,Rejected,,
+CAN366,David Martinez,Sales,Job Board,2237.46,5/21/2024,Passed,Passed,Passed,Accepted,Hired,7/19/2024,485
+CAN369,Robert Martinez,Sales,Direct Application,1381.06,4/25/2025,Passed,Passed,Passed,Failed,Rejected,,
+CAN371,Mike Williams,Sales,University Campus,953.5,1/29/2025,Failed,N/A,N/A,N/A,Rejected,,
+CAN374,Chris Smith,Sales,Referral,3573.53,8/29/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN376,Chris Rodriguez,Sales,Direct Application,1935.39,1/5/2025,Passed,Passed,Failed,N/A,Rejected,,
+CAN378,Emily Williams,Sales,Job Board,604.72,10/2/2024,Passed,Passed,Passed,Accepted,Hired,11/27/2024,500
+CAN380,David Davis,Sales,Job Board,1768.35,11/9/2023,Passed,Passed,Passed,Accepted,Hired,12/21/2023,503
+CAN382,David Williams,Sales,University Campus,3635.32,10/1/2025,Passed,Passed,Passed,Accepted,Hired,11/29/2025,505
+CAN384,David Smith,Sales,LinkedIn,4448.62,4/10/2023,Failed,N/A,N/A,N/A,Rejected,,
+CAN386,Mike Jones,Sales,Job Board,4115.66,5/4/2023,Passed,Passed,Passed,Failed,Rejected,,
+CAN388,Jane Jones,Sales,Direct Application,1298.48,8/10/2024,Passed,Passed,Passed,Accepted,Hired,9/10/2024,519
+CAN390,Mike Garcia,Sales,Job Board,4130.76,7/1/2024,Passed,Passed,Passed,Accepted,Hired,9/19/2024,521
+CAN392,Mike Johnson,Sales,LinkedIn,2356.78,7/11/2023,Passed,Passed,Passed,Accepted,Hired,9/4/2023,522
+CAN394,Lisa Martinez,Sales,Job Board,3993.86,7/15/2023,Passed,Passed,Passed,Accepted,Hired,10/10/2023,526
+CAN396,Jane Miller,Sales,Direct Application,4688.41,3/9/2023,Passed,Failed,N/A,N/A,Rejected,,
