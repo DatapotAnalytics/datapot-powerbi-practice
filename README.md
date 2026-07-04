@@ -31,3 +31,6 @@ Repository tổng hợp tài liệu thực hành Power BI và Data Analytics c�
 
 - Website: https://datapot.vn/
 - YouTube: https://www.youtube.com/@Datapotvn
+- Fanpage: https://www.facebook.com/DatapotAnalytics
+- Cộng đồng chuyên môn: https://www.facebook.com/groups/nguoilamdata
+- Nhóm Zalo: https://zalo.me/g/jjingb205
