@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo · Copilot in SharePoint — Recruitment Dashboard | Datapot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1E24;
+    --ink-2:#2B2F36;
+    --muted:#5C6672;
+    --line:#E2E7EE;
+    --paper:#F4F6FA;
+    --white:#FFFFFF;
+    --blue:#0F94E7;
+    --purple:#8068C5;
+    --coral:#F46880;
+    --orange:#FC9D5E;
+    --grad:linear-gradient(100deg,var(--blue) 0%,var(--purple) 62%,var(--coral) 100%);
+    --shadow:0 1px 2px rgba(27,31,38,.05),0 12px 32px -18px rgba(27,31,38,.28);
+    --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+    font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  .mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+
+  /* ---------- eyebrow ---------- */
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--blue);
+    display:flex;align-items:center;gap:10px;margin:0 0 14px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--grad);border-radius:2px;flex:none}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    background:var(--ink);color:#fff;position:relative;overflow:hidden;
+    padding:74px 0 0;
+  }
+  header.hero::before{
+    content:"";position:absolute;inset:-40% -10% auto -10%;height:420px;
+    background:radial-gradient(60% 90% at 22% 40%,rgba(15,148,231,.42),transparent 68%),
+               radial-gradient(50% 80% at 72% 20%,rgba(128,104,197,.38),transparent 70%),
+               radial-gradient(40% 70% at 92% 65%,rgba(244,104,128,.24),transparent 72%);
+    filter:blur(12px);pointer-events:none;
+  }
+  .hero-inner{position:relative}
+  .hero .eyebrow{color:#7FC4F5}
+  h1{
+    font-size:clamp(30px,5vw,50px);line-height:1.1;font-weight:800;letter-spacing:-.025em;
+    margin:0 0 18px;max-width:21ch;
+  }
+  h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{font-size:clamp(15px,2vw,18.5px);color:#B8C2CE;max-width:62ch;margin:0 0 30px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:46px}
+  .chip{
+    border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);
+    border-radius:999px;padding:7px 15px;font-size:13px;color:#DCE3EB;
+    display:flex;align-items:center;gap:8px;backdrop-filter:blur(6px);
+  }
+  .chip b{color:#fff;font-weight:600}
+  .dot{width:6px;height:6px;border-radius:50%;flex:none}
+
+  /* ---------- signature: stage rail ---------- */
+  .rail{
+    background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);
+    border-bottom:none;border-radius:var(--r) var(--r) 0 0;padding:22px 24px 26px;
+    margin-bottom:0;position:relative;
+  }
+  .rail-label{
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:#8A97A6;margin-bottom:18px;
+  }
+  .stages{display:flex;align-items:flex-start;gap:0;position:relative}
+  .stage{flex:1;min-width:0;position:relative;text-align:left;padding-right:8px}
+  .stage .bar{height:4px;border-radius:3px;background:rgba(255,255,255,.14);margin-bottom:12px;position:relative;overflow:hidden}
+  .stage .bar span{position:absolute;inset:0;transform-origin:left;transform:scaleX(0);border-radius:3px;
+    animation:grow .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .stage:nth-child(1) .bar span{background:var(--blue);animation-delay:.15s}
+  .stage:nth-child(2) .bar span{background:#3D8CDD;animation-delay:.27s}
+  .stage:nth-child(3) .bar span{background:var(--purple);animation-delay:.39s}
+  .stage:nth-child(4) .bar span{background:#A868AC;animation-delay:.51s}
+  .stage:nth-child(5) .bar span{background:var(--coral);animation-delay:.63s}
+  .stage:nth-child(6) .bar span{background:var(--orange);animation-delay:.75s}
+  @keyframes grow{to{transform:scaleX(1)}}
+  .stage .n{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#6F7C8B;display:block;margin-bottom:2px}
+  .stage .t{font-size:12.5px;font-weight:600;color:#E6EBF1;letter-spacing:-.01em}
+  @media (prefers-reduced-motion:reduce){.stage .bar span{animation:none;transform:scaleX(1)}}
+
+  /* ---------- sections ---------- */
+  main{padding:0 0 90px}
+  .board{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--shadow);margin-top:-1px;
+  }
+  section{padding:52px 0 8px}
+  section:first-of-type{padding-top:56px}
+  h2{
+    font-size:clamp(21px,3vw,27px);font-weight:700;letter-spacing:-.02em;
+    margin:0 0 12px;line-height:1.25;
+  }
+  h3{font-size:16px;font-weight:600;margin:0 0 6px;letter-spacing:-.01em}
+  p{margin:0 0 16px;color:var(--ink-2)}
+  .muted{color:var(--muted)}
+  .divider{height:1px;background:var(--line);margin:44px 0 0}
+
+  /* ---------- lists grid ---------- */
+  .lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:10px;margin:22px 0 6px}
+  .list-item{
+    background:var(--white);border:1px solid var(--line);border-radius:10px;
+    padding:13px 15px;display:flex;align-items:center;gap:11px;
+    transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;
+  }
+  .list-item:hover{border-color:#C6D3E4;transform:translateY(-2px);box-shadow:0 8px 20px -14px rgba(27,31,38,.4)}
+  .list-item .sq{width:9px;height:9px;border-radius:2px;flex:none}
+  .list-item .nm{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-2);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .list-item .core{
+    margin-left:auto;font-size:9.5px;font-family:'JetBrains Mono',monospace;letter-spacing:.08em;
+    color:var(--blue);border:1px solid rgba(15,148,231,.3);border-radius:4px;padding:1px 5px;flex:none;
+  }
+
+  /* ---------- flow ---------- */
+  .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;margin:24px 0 10px}
+  .flow-step{
+    background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;
+  }
+  .flow-step .k{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .flow-step p{font-size:14px;margin:0;color:var(--muted);line-height:1.55}
+  .flow-arrow{display:flex;align-items:center;justify-content:center;width:44px;color:#C0CAD6;font-size:18px}
+  @media(max-width:820px){
+    .flow{grid-template-columns:1fr}
+    .flow-arrow{width:auto;height:30px;transform:rotate(90deg)}
+  }
+
+  /* ---------- result cards ---------- */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px;margin:24px 0 6px}
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px;
+    position:relative;overflow:hidden;
+  }
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}
+  .card.c1::before{background:var(--blue)} .card.c2::before{background:#3D8CDD}
+  .card.c3::before{background:var(--purple)} .card.c4::before{background:#A868AC}
+  .card.c5::before{background:var(--coral)} .card.c6::before{background:var(--orange)}
+  .card h3{margin-bottom:5px}
+  .card p{font-size:14px;color:var(--muted);margin:0;line-height:1.58}
+
+  /* ---------- highlights ---------- */
+  .hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0 6px}
+  .hl-item{
+    background:linear-gradient(180deg,rgba(15,148,231,.05),rgba(128,104,197,.04));
+    border:1px solid rgba(15,148,231,.18);border-radius:12px;padding:20px;
+  }
+  .hl-item h3{color:var(--ink)}
+  .hl-item p{font-size:14px;color:var(--ink-2);margin:0;line-height:1.6}
+  @media(max-width:720px){.hl{grid-template-columns:1fr}}
+
+  .note{
+    border-left:3px solid var(--orange);background:rgba(252,157,94,.07);
+    border-radius:0 10px 10px 0;padding:16px 20px;margin:22px 0 6px;
+  }
+  .note p{font-size:14px;margin:0;color:var(--ink-2)}
+  .note strong{color:var(--ink)}
+
+  /* ---------- prompts ---------- */
+  .prompts-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .prompt{
+    background:var(--white);border:1px solid var(--line);border-radius:12px;
+    margin:16px 0 0;overflow:hidden;
+  }
+  .p-top{
+    display:flex;align-items:center;gap:14px;padding:15px 18px;
+    border-bottom:1px solid var(--line);background:#FAFBFD;
+  }
+  .p-num{
+    font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#fff;
+    width:26px;height:26px;border-radius:7px;display:grid;place-items:center;flex:none;background:var(--ink);
+  }
+  .prompt:nth-of-type(1) .p-num{background:var(--blue)}
+  .prompt:nth-of-type(2) .p-num{background:var(--purple)}
+  .prompt:nth-of-type(3) .p-num{background:var(--coral)}
+  .p-title{font-size:14.5px;font-weight:600;letter-spacing:-.01em;line-height:1.4}
+  .copy{
+    margin-left:auto;flex:none;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;
+    border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:7px;
+    padding:6px 12px;cursor:pointer;transition:all .16s ease;
+  }
+  .copy:hover{border-color:var(--blue);color:var(--blue)}
+  .copy:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+  .copy.done{border-color:#2E9E6B;color:#2E9E6B}
+  .p-body{padding:18px 22px;font-size:14.5px;line-height:1.72;color:var(--ink-2);white-space:pre-wrap}
+  .p-body .b{font-weight:600;color:var(--ink)}
+  .p-body .ph{
+    font-family:'JetBrains Mono',monospace;font-size:13px;background:rgba(15,148,231,.09);
+    color:var(--blue);border-radius:5px;padding:1px 6px;
+  }
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+    font-size:12.5px;color:var(--muted)}
+  .brandmark{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--ink);font-size:14px;letter-spacing:-.01em}
+  .brandmark .m{width:16px;height:16px;border-radius:4px;background:var(--grad)}
+
+  @media(max-width:640px){
+    .wrap{padding:0 18px}
+    header.hero{padding-top:52px}
+    .stages{flex-wrap:wrap;gap:12px 0}
+    .stage{flex:0 0 50%}
+    .p-body{padding:16px}
+    .p-top{flex-wrap:wrap}
+    .copy{margin-left:0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Demo · Microsoft 365 Copilot in SharePoint</div>
+    <h1>Từ SharePoint Lists đến <em>dashboard tuyển dụng</em> — không cần Power BI, không cần viết tay công thức phức tạp</h1>
+    <p class="lede">HR mô tả nhu cầu bằng ngôn ngữ tự nhiên. Copilot đọc thẳng 8 SharePoint Lists của quy trình tuyển dụng, hiểu cấu trúc dữ liệu và trả về một interactive dashboard trong khoảng 3–5 phút.</p>
+
+    <div class="chips">
+      <span class="chip"><span class="dot" style="background:var(--blue)"></span><b>8</b> SharePoint Lists</span>
+      <span class="chip"><span class="dot" style="background:var(--purple)"></span><b>3–5 phút</b> mỗi lần tạo</span>
+      <span class="chip"><span class="dot" style="background:var(--coral)"></span><b>3</b> prompt từ đầu đến kết quả</span>
+      <span class="chip"><span class="dot" style="background:var(--orange)"></span>Refresh tại chỗ, không copy dữ liệu</span>
+    </div>
+
+    <div class="rail">
+      <div class="rail-label">Vòng đời một application — trục xương sống của dashboard</div>
+      <div class="stages">
+        <div class="stage"><div class="bar"><span></span></div><span class="n">01</span><span class="t">Received</span></div>
+        <div class="stage"><div class="bar"><span></span></div><span class="n">02</span><span class="t">Screening</span></div>
+        <div class="stage"><div class="bar"><span></span></div><span class="n">03</span><span class="t">Interview</span></div>
+        <div class="stage"><div class="bar"><span></span></div><span class="n">04</span><span class="t">Offer</span></div>
+        <div class="stage"><div class="bar"><span></span></div><span class="n">05</span><span class="t">Hired</span></div>
+        <div class="stage"><div class="bar"><span></span></div><span class="n">06</span><span class="t">Rejected</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+<div class="board">
+<div class="wrap">
+
+  <section>
+    <div class="eyebrow">Phần I · Bối cảnh</div>
+    <h2>Dữ liệu nằm tập trung, không rải rác trong file Excel</h2>
+    <p>Site mô phỏng một quy trình tuyển dụng hoàn chỉnh: từ yêu cầu tuyển dụng, hồ sơ ứng viên, tiến trình xử lý cho tới email gửi ra cho ứng viên. Toàn bộ được quản lý bằng SharePoint Lists — đây là điều kiện để Copilot đọc và hiểu được nghiệp vụ.</p>
+
+    <div class="lists">
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Jobs</span><span class="core">nguồn chính</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Applications</span><span class="core">nguồn chính</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Activities</span><span class="core">nguồn chính</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Outbox</span><span class="core">nguồn chính</span></div>
+      <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_Candidates</span></div>
+      <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_Intake</span></div>
+      <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_DeptPIC</span></div>
+      <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_EmailTemplates</span></div>
+    </div>
+
+    <div class="divider"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Cách tiếp cận</div>
+    <h2>Mô tả nhu cầu, không tổng hợp thủ công</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="k">Người dùng</div>
+        <p>Đưa yêu cầu bằng ngôn ngữ tự nhiên: cần dashboard gì, phục vụ câu hỏi nào, lưu ở đâu.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="k">Copilot</div>
+        <p>Đọc cấu trúc các list, chọn cột liên quan và đề xuất bố cục phù hợp với nghiệp vụ tuyển dụng.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="k">Kết quả</div>
+        <p>Sau 3–5 phút, dashboard được tạo và lưu đúng thư mục đã chỉ định trong yêu cầu.</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Kết quả</div>
+    <h2>Dashboard trả ra gồm sáu thành phần</h2>
+    <div class="cards">
+      <div class="card c1">
+        <h3>KPI cards</h3>
+        <p>Tổng số vị trí, số vị trí đang mở, tổng chỉ tiêu, số đã tuyển và gap còn lại.</p>
+      </div>
+      <div class="card c2">
+        <h3>Pipeline chart</h3>
+        <p>Ứng viên đang dừng ở stage nào — received, screening, interview, offer, hired, rejected. Nhìn ra bottleneck ngay.</p>
+      </div>
+      <div class="card c3">
+        <h3>Source chart</h3>
+        <p>So sánh hiệu quả các nguồn ứng viên giữa FORM, EMAIL và AGENT.</p>
+      </div>
+      <div class="card c4">
+        <h3>Job fill table</h3>
+        <p>Drill down từng vị trí: phòng ban tuyển, target, số đã tuyển và số còn thiếu.</p>
+      </div>
+      <div class="card c5">
+        <h3>Alerts</h3>
+        <p>Cảnh báo hồ sơ thiếu CV, vị trí đã đủ người, hoặc job chưa chọn trạng thái.</p>
+      </div>
+      <div class="card c6">
+        <h3>Bộ lọc tương tác</h3>
+        <p>Lọc theo phòng ban, vị trí, stage hoặc nguồn ứng viên.</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Điểm nổi bật</div>
+    <h2>Vì sao cách làm này khác</h2>
+    <div class="hl">
+      <div class="hl-item">
+        <h3>Dữ liệu sống, không phải ảnh chụp</h3>
+        <p>Dashboard đọc trực tiếp từ SharePoint Lists. Khi dữ liệu được cập nhật, chỉ cần nhấn Refresh để phản ánh trạng thái mới — không xuất Excel, không copy dữ liệu thủ công.</p>
+      </div>
+      <div class="hl-item">
+        <h3>Hỏi thẳng dữ liệu</h3>
+        <p>Có thể hỏi Copilot về insight bằng prompt trực tiếp, ví dụ: tóm tắt 5 insight quan trọng nhất và đề xuất 3 hành động HR nên làm tiếp theo.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <p><strong>Lưu ý:</strong> Đây là dữ liệu demo, không đại diện cho quy trình tiêu chuẩn của bất kỳ đơn vị nào. Việc chuẩn hóa báo cáo đầu ra theo tiêu chí và bộ theme của doanh nghiệp có thể tiếp tục được tối ưu trong các bước làm việc tiếp theo với Copilot.</p>
+    </div>
+    <div class="divider"></div>
+  </section>
+
+  <section style="padding-bottom:52px">
+    <div class="prompts-head">
+      <div>
+        <div class="eyebrow">Phần II · Bộ prompt</div>
+        <h2>Ba prompt đã dùng trong demo</h2>
+        <p class="muted" style="margin-bottom:0">Thứ tự có ý nghĩa: tạo — tinh chỉnh — khai thác. Bấm Copy để lấy nguyên văn.</p>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="p-top">
+        <span class="p-num">1</span>
+        <span class="p-title">Đọc hiểu dữ liệu, nghiệp vụ và xây dựng dashboard động</span>
+        <button class="copy" data-target="p1">COPY</button>
+      </div>
+      <div class="p-body" id="p1">Hãy đọc các SharePoint Lists trong site này và tạo một interactive recruitment dashboard.
+
+Nguồn dữ liệu chính:
+• DEMO_Recruitment_Jobs
+• DEMO_Recruitment_Applications
+• DEMO_Recruitment_Activities
+• DEMO_Recruitment_Outbox
+
+Dashboard cần đảm bảo các tiêu chí, nguyên tắc về visualize.
+
+Tham khảo thêm các best practice về xây dựng report cho domain HR để build báo cáo đảm bảo các tiêu chí:
+• Trả lời được câu hỏi mục tiêu khi mở báo cáo
+• Bố cục rõ ràng, hợp lý
+• Refresh dữ liệu để kết quả up-to-date
+• Highlight những điểm cần action / vùng cần lưu ý
+
+Output lưu tại: <span class="ph">&lt;Vị trí muốn lưu file&gt;</span></div>
+    </div>
+
+    <div class="prompt">
+      <div class="p-top">
+        <span class="p-num">2</span>
+        <span class="p-title">Điều chỉnh visual cho báo cáo</span>
+        <button class="copy" data-target="p2">COPY</button>
+      </div>
+      <div class="p-body" id="p2">Tôi thấy có 2 vấn đề cần điều chỉnh để dashboard tốt hơn.
+
+1. Section cockpit lỗi về mặt visual, chữ đen trên nền xanh mang lại trải nghiệm rất tệ. Cần lựa chọn phương án tối ưu hơn.
+
+2. Phần pipeline by stage: vòng đời của 1 application có tiến trình tiêu chuẩn, nên hiển thị thông tin theo tiến trình đó thay vì đảo lộn vị trí như visual hiện tại.
+
+Điều chỉnh lại 2 vấn đề trên và tự rà soát lại kết quả, cập nhật thẳng vào version cũ và gửi lại link truy cập trực tiếp vào chat cho tôi.
+
+Sau khi trải nghiệm 1 lần, tôi muốn phần header và nút refresh được freeze lại để mỗi lần muốn làm mới tôi không cần kéo lên đầu trang.
+
+Vị trí, căn lề các component cần thẳng hàng, căn lề 2 bên, tránh trường hợp như cột outbox và activity health.</div>
+    </div>
+
+    <div class="prompt">
+      <div class="p-top">
+        <span class="p-num">3</span>
+        <span class="p-title">Tổng kết insight và đề xuất hành động</span>
+        <button class="copy" data-target="p3">COPY</button>
+      </div>
+      <div class="p-body" id="p3">Tóm tắt 5 insight quan trọng nhất từ recruitment dashboard này và đề xuất 3 hành động HR nên làm tiếp theo.</div>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<footer>
+  <div class="foot">
+    <div class="brandmark"><span class="m"></span>Datapot Analytics</div>
+    <div>Demo · Copilot in SharePoint — Recruitment Dashboard</div>
+  </div>
+</footer>
+</div>
+</main>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var el = document.getElementById(btn.dataset.target);
+      var text = el.innerText;
+      var done = function(){
+        var old = btn.textContent;
+        btn.textContent = 'ĐÃ COPY';
+        btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function(){ fallback(text, done); });
+      } else { fallback(text, done); }
+    });
+  });
+  function fallback(text, cb){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); cb(); } catch(e){}
+    document.body.removeChild(ta);
+  }
+</script>
+</body>
+</html>
