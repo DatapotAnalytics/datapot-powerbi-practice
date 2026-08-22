@@ -1,0 +1,16 @@
+# Installer / máy ảo — vượt giới hạn 100MB của GitHub, không đưa vào repo
+*.dmg
+*.iso
+*.exe
+*.msi
+*.vmdk
+
+# File tạm của hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# File tạm Office / Power BI
+~$*
+*.tmp
+*.pbix.bak
