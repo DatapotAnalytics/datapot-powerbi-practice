@@ -56,9 +56,15 @@
   .hero-inner{position:relative}
   .hero .eyebrow{color:#7FC4F5}
   h1{
-    font-size:clamp(30px,5vw,50px);line-height:1.1;font-weight:800;letter-spacing:-.025em;
-    margin:0 0 18px;max-width:21ch;
+    font-size:clamp(26px,5vw,50px);line-height:1.12;font-weight:800;letter-spacing:-.025em;
+    margin:0 0 18px;max-width:none;text-wrap:balance;
   }
+  /* controlled line breaks: desktop set >=860px, phone set <640px,
+     natural balanced wrap in between (it already lands on the right lines) */
+  h1 .hb-d,h1 .hb-m{display:none}
+  @media(min-width:860px){ h1{text-wrap:initial} h1 .hb-d{display:inline} }
+  @media(max-width:639px){ h1{text-wrap:initial} h1 .hb-m{display:inline} }
+  @media(max-width:355px){ h1{font-size:22px} }
   h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   .lede{font-size:clamp(15px,2vw,18.5px);color:#B8C2CE;max-width:62ch;margin:0 0 30px}
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:46px}
@@ -114,7 +120,11 @@
   .divider{height:1px;background:var(--line);margin:44px 0 0}
 
   /* ---------- lists grid ---------- */
-  .lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:10px;margin:22px 0 6px}
+  .lists{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 22px}
+  .lg-label{display:flex;align-items:center;gap:9px;margin:22px 0 10px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted)}
+  .lg-label .sq{width:9px;height:9px;border-radius:2px;flex:none}
   .list-item{
     background:var(--white);border:1px solid var(--line);border-radius:10px;
     padding:13px 15px;display:flex;align-items:center;gap:11px;
@@ -122,12 +132,8 @@
   }
   .list-item:hover{border-color:#C6D3E4;transform:translateY(-2px);box-shadow:0 8px 20px -14px rgba(27,31,38,.4)}
   .list-item .sq{width:9px;height:9px;border-radius:2px;flex:none}
-  .list-item .nm{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-2);
-    overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .list-item .core{
-    margin-left:auto;font-size:9.5px;font-family:'JetBrains Mono',monospace;letter-spacing:.08em;
-    color:var(--blue);border:1px solid rgba(15,148,231,.3);border-radius:4px;padding:1px 5px;flex:none;
-  }
+  .list-item .nm{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-2);
+    line-height:1.4;white-space:nowrap;min-width:0}
 
   /* ---------- flow ---------- */
   .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;margin:24px 0 10px}
@@ -187,9 +193,9 @@
     font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#fff;
     width:26px;height:26px;border-radius:7px;display:grid;place-items:center;flex:none;background:var(--ink);
   }
-  .prompt:nth-of-type(1) .p-num{background:var(--blue)}
-  .prompt:nth-of-type(2) .p-num{background:var(--purple)}
-  .prompt:nth-of-type(3) .p-num{background:var(--coral)}
+  .prompt.n1 .p-num{background:var(--blue)}
+  .prompt.n2 .p-num{background:var(--purple)}
+  .prompt.n3 .p-num{background:var(--coral)}
   .p-title{font-size:14.5px;font-weight:600;letter-spacing:-.01em;line-height:1.4}
   .copy{
     margin-left:auto;flex:none;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;
@@ -215,6 +221,8 @@
 
   @media(max-width:640px){
     .wrap{padding:0 18px}
+    .lists{grid-template-columns:1fr}
+    .list-item .nm{font-size:11px}
     header.hero{padding-top:52px}
     .stages{flex-wrap:wrap;gap:12px 0}
     .stage{flex:0 0 50%}
@@ -229,7 +237,7 @@
 <header class="hero">
   <div class="wrap hero-inner">
     <div class="eyebrow">Demo · Microsoft 365 Copilot in SharePoint</div>
-    <h1>Từ SharePoint Lists đến <em>dashboard tuyển dụng</em> — không cần Power BI, không cần viết tay công thức phức tạp</h1>
+    <h1>Từ SharePoint Lists đến<br class="hb-m"> <em>dashboard<br class="hb-d"> tuyển dụng</em> —<br class="hb-m"> không cần Power BI,<br class="hb-d"><br class="hb-m"> không cần viết công thức<br class="hb-m"> phức tạp</h1>
     <p class="lede">HR mô tả nhu cầu bằng ngôn ngữ tự nhiên. Copilot đọc thẳng 8 SharePoint Lists của quy trình tuyển dụng, hiểu cấu trúc dữ liệu và trả về một interactive dashboard trong khoảng 3–5 phút.</p>
 
     <div class="chips">
@@ -263,11 +271,16 @@
     <h2>Dữ liệu nằm tập trung, không rải rác trong file Excel</h2>
     <p>Site mô phỏng một quy trình tuyển dụng hoàn chỉnh: từ yêu cầu tuyển dụng, hồ sơ ứng viên, tiến trình xử lý cho tới email gửi ra cho ứng viên. Toàn bộ được quản lý bằng SharePoint Lists — đây là điều kiện để Copilot đọc và hiểu được nghiệp vụ.</p>
 
+    <div class="lg-label"><span class="sq" style="background:var(--blue)"></span>4 list Copilot đọc trực tiếp</div>
     <div class="lists">
-      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Jobs</span><span class="core">nguồn chính</span></div>
-      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Applications</span><span class="core">nguồn chính</span></div>
-      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Activities</span><span class="core">nguồn chính</span></div>
-      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Outbox</span><span class="core">nguồn chính</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Jobs</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Applications</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Activities</span></div>
+      <div class="list-item"><span class="sq" style="background:var(--blue)"></span><span class="nm">DEMO_Recruitment_Outbox</span></div>
+    </div>
+
+    <div class="lg-label"><span class="sq" style="background:#C3CDDA"></span>4 list bổ trợ trong site</div>
+    <div class="lists">
       <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_Candidates</span></div>
       <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_Intake</span></div>
       <div class="list-item"><span class="sq" style="background:#C3CDDA"></span><span class="nm">DEMO_Recruitment_DeptPIC</span></div>
@@ -300,7 +313,7 @@
   </section>
 
   <section>
-    <div class="eyebrow">Kết quả</div>
+    <div class="eyebrow">Dashboard đầu ra</div>
     <h2>Dashboard trả ra gồm sáu thành phần</h2>
     <div class="cards">
       <div class="card c1">
@@ -356,11 +369,11 @@
       <div>
         <div class="eyebrow">Phần II · Bộ prompt</div>
         <h2>Ba prompt đã dùng trong demo</h2>
-        <p class="muted" style="margin-bottom:0">Thứ tự có ý nghĩa: tạo — tinh chỉnh — khai thác. Bấm Copy để lấy nguyên văn.</p>
+        <p class="muted" style="margin-bottom:0">Thứ tự có ý nghĩa: tạo — tinh chỉnh — khai thác.<span class="screen-only"> Bấm Copy để lấy nguyên văn.</span></p>
       </div>
     </div>
 
-    <div class="prompt">
+    <div class="prompt n1">
       <div class="p-top">
         <span class="p-num">1</span>
         <span class="p-title">Đọc hiểu dữ liệu, nghiệp vụ và xây dựng dashboard động</span>
@@ -385,7 +398,7 @@ Tham khảo thêm các best practice về xây dựng report cho domain HR để
 Output lưu tại: <span class="ph">&lt;Vị trí muốn lưu file&gt;</span></div>
     </div>
 
-    <div class="prompt">
+    <div class="prompt n2">
       <div class="p-top">
         <span class="p-num">2</span>
         <span class="p-title">Điều chỉnh visual cho báo cáo</span>
@@ -404,7 +417,7 @@ Sau khi trải nghiệm 1 lần, tôi muốn phần header và nút refresh đư
 Vị trí, căn lề các component cần thẳng hàng, căn lề 2 bên, tránh trường hợp như cột outbox và activity health.</div>
     </div>
 
-    <div class="prompt">
+    <div class="prompt n3">
       <div class="p-top">
         <span class="p-num">3</span>
         <span class="p-title">Tổng kết insight và đề xuất hành động</span>
